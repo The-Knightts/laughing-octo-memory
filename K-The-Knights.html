@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knights</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Knights.css">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0%;
+            background: url('Kuber.jpg');
+            font-family: 'Merriweather', serif;
+        }
+
+        .left {
+            top: 19px;
+            left: 33px;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            /* border: 2px solid black; */
+            padding: 10px 25px 10px 10px;
+            /* background-color: rgb(255, 252, 252, 0.6); */
+            border-radius: 30px;
+        }
+
+        .left img {
+            width: 80px;
+            /* height: 0px; */
+        }
+
+        .left div {
+            text-align: right;
+            margin-left: 10px;
+        }
+
+        .left div strong {
+            font-size: 25px;
+        }
+
+        .center {
+            position: absolute;
+            top: 30px;
+            left: 25%;
+            display: block;
+            width: 55%;
+            margin: auto;
+            /* border: 2px solid rgb(6, 145, 101); */
+        }
+
+        .right {
+            top: 31px;
+            right: 33px;
+            position: absolute;
+            display: inline-block;
+            /* border: 2px solid rgb(207, 17, 17); */
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 17px;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: wheat;
+            padding: 30px 25px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.cat {
+            background-color: goldenrod;
+            color: black;
+            padding: 10px 25px;
+            border-radius: 20px;
+        }
+
+        .btn {
+            margin: 0px 20px;
+            color: goldenrod;
+            background-color: black;
+            padding: 10px 10px;
+            border-radius: 12px;
+            font-size: 17px;
+            cursor: pointer;
+            font-family: 'Merriweather', serif;
+
+        }
+
+        .btn:hover {
+            background-color: goldenrod;
+            color: black;
+            font-family: 'Merriweather', serif;
+
+        }
+
+        .container {
+            /* border: 2px solid yellow; */
+            margin: 30px 50px;
+            padding: 20px 20px 20px 20px;
+            width: 30%;
+            border-radius: 30px;
+            position: absolute;
+            top: 210px;
+            background-color: rgba(255, 255, 255, 0.4);
+            /* background-color:; */
+        }
+        .container h2{
+            text-align: center;
+            /* margin: 20px 20px 20px 35px; */
+            /* background-color: rgb(218, 165, 32, 0.8) ; */
+            border-radius: 10px;
+            width: 250px;
+            margin: auto;
+            padding: 5px 5px 5px 5px;
+            }
+        .container button{
+            display: block;
+            width: 83%;
+            margin: 18px 32px;
+        }
+        .formg input{
+            text-align: center;
+            font-size: 20px;
+            margin:15px auto;
+            /* background-color: ; */
+            padding: 6px 6px 6px 6px;
+            border: 2px solid black;
+            width: 300px;
+            display: block;
+            border-radius: 15px;
+            font-family: 'Merriweather', serif;
+        }
+        header{
+            background-color: rgb(0, 0, 0, 0.3);
+            position: relative;
+            padding: 58px 100px 58px 12px;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- <h1>Welcome to the Knights of the Round Table!</h1> -->
+        <div class="left">
+            <img src="Eyes.png" alt="">
+            <div><strong>The Knights</strong></div>
+        </div>
+        <div class="center">
+            <ul class="navbar">
+                <li><a href="#" class="cat">Home</a></li>
+                <li><a href="#">Weapons</a></li>
+                <li><a href="#">Hunters</a></li>
+                <li><a href="#">Potions</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Help</button>
+        </div>
+    </header>
+    <div class="container">
+        <h2>Recruting Hunters!!</h2>
+        <form action="backend.php">
+            <div class="formg">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="formg">
+                <input type="text" name="" placeholder="Enter Your Age">
+            </div>
+            <div class="formg">
+                <input type="text" name="" placeholder="Enter Your City">
+            </div>
+            <div class="formg">
+                <input type="text" name="" placeholder="Enter Your Rank">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
